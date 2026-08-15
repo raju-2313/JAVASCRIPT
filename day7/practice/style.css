@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(182, 241, 241);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+h1{
+    color: rgb(66, 66, 66);
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    padding-top: 36px;
+    text-align: center;
+    border-radius: 16px;
+
+
+}
+
+p{
+    text-align: center;
+}
+
+.para{
+    color: red;
+
+}
+
+.newClass {
+    background-color:rgb(255, 213, 183);
+    border-radius: 10px;
+}

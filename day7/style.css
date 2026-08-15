@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(182, 241, 241);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#box{
+    height: 60px;
+    width: 300px;
+    background-color: blueviolet;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    padding-top: 36px;
+    text-align: center;
+    border-radius: 16px;
+
+
+}

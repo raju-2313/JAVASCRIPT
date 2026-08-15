@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(182, 241, 241);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 16px;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(192, 124, 255);
+    text-align: center;
+    padding-top: 16px;
+    padding-left: 24px;
+    
+}
