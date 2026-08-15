@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <main>
+
+    <div class="game-header" id="game-header">
+        <span class="char">T</span>
+        <span class="char">I</span>
+        <span class="char">C</span>
+        <span class="char space">&nbsp;</span>
+        <span class="char">T</span>
+        <span class="char">A</span>
+        <span class="char">C</span>
+        <span class="char space">&nbsp;</span>
+        <span class="char">T</span>
+        <span class="char">O</span>
+        <span class="char">E</span>
+    </div>
+
+    <div class="scoreboard">
+        <div class="score">
+            <div class="label">X</div>
+            <div id="score-x">0</div>
+        </div>
+        <div class="score">
+            <div class="label">O</div>
+            <div id="score-o">0</div>
+        </div>
+        <button id="reset-scores">Reset Scores</button>
+    </div>
+
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New Game</button>
+    </div>
+
+    <div class="container">
+        <div class="game-container">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+    <button id="reset-btn">Reset</button>
+    
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
