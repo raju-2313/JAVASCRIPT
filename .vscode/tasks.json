@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start GitHub Copilot CLI",
+            "type": "shell",
+            "command": "copilot",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

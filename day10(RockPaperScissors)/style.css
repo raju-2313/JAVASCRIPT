@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(26, 118, 124);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    padding: 20px;
+    background-color: rgba(13, 114, 109, 0.959);
+
+}
+
+.choice {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.25s;
+
+}
+
+.choice:hover{
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+    transform-origin: bottom;
+
+}
+
+img {
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+
+
+.score p{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.score{
+    background-color: #081b31;
+    border-radius: 10%;
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px white solid;
+
+}
+
+.empty{
+    background-color: whitesmoke;
+    height: 100px;
+    width: 1px;
+}
+
+#user-score,
+#comp-score{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.score-slide {
+    color: transparent;
+}
+
+.score-slide::before {
+    content: attr(data-old);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    color: white;
+
+    animation: scoreOut 0.35s ease-in forwards;
+}
+
+
+.score-slide::after {
+    content: attr(data-new);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    animation: scoreIn 0.35s ease-out forwards;
+}
+
+@keyframes scoreOut {
+    from {
+        transform: translateY(0);
+
+    }
+
+    to {
+        transform: translateY(-100%);
+ 
+    }
+}
+
+@keyframes scoreIn {
+    from {
+        transform: translateY(0);
+        
+    }
+
+    to {
+        transform: translateY(-100%);
+        
+    }
+}
+
+.msg-container {
+    margin-top: 3rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+#msg{
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: #081b31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 16px;
+}

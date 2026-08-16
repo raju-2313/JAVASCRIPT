@@ -72,22 +72,28 @@ const showWinner = (winner) => {
     // update scoreboard without altering core game logic
     if(winner === "X"){
         scoreX += 1;
-        if(scoreXEl) scoreXEl.innerText = scoreX;
-    } else if(winner === "O"){
+        if(scoreXEl){
+            scoreXEl.innerText = scoreX;
+        } 
+    } 
+    else if(winner === "O"){
         scoreO += 1;
-        if(scoreOEl) scoreOEl.innerText = scoreO;
+        if(scoreOEl){
+            scoreOEl.innerText = scoreO;
+        }
     }
+    
     disableBoxes();
+    
 };
 
 const checkWinner = () => {
-
+    
     for(let pattern of winPatterns){
-
+        
         let position1 = boxes[pattern[0]].innerText;
         let position2 = boxes[pattern[1]].innerText;
         let position3 = boxes[pattern[2]].innerText;
-
     
 
 
