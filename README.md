@@ -12,6 +12,7 @@ This repository contains exercises and small projects from a JavaScript course. 
 - day7: More DOM/CSS practice and examples
 - day8: Practice pages and examples
 - day9 (TicTacToe): A Tic Tac Toe game (index.html, script.js, style.css)
+- day13 (currencyConvertor): A Currency Converter app (index.html, style.css, app.js, codes.js)
 
 ## Notable files
 - day9(TicTacToe)/index.html — Tic Tac Toe game UI
